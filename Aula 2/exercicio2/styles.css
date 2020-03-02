@@ -1,0 +1,11 @@
+.content {
+    background-color: black;
+    color: white;
+    width: 320px;
+    margin: 10% auto;
+    padding: 4% 125px;
+    border-radius: 20px;
+    font-size: 22px;
+    font-family: monospace;
+}
+
