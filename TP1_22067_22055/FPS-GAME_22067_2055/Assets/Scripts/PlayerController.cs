@@ -30,6 +30,11 @@ public class PlayerController : MonoBehaviour
         Vector3 _movHorizontal = transform.right * xMov;
         Vector3 _movVertical = transform.forward * zMov;
 
+        if(Cursor.lockState != CursorLockMode.Locked)
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+        }
+
         //vetor do movimento final
         Vector3 _velocity = (_movHorizontal + _movVertical).normalized * speed;
 
